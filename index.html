@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teamgrow Solutions — Driving Growth, Building Brands, Empowering People</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- AOS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --navy:#05204a;
+      --teal:#0ea5a4;
+      --accent:#ffb74d;
+      --muted:#6b7280;
+      --bg:#f8fafc;
+      --glass: rgba(255,255,255,0.65);
+      font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg, #fbfdff 0%, var(--bg) 100%);color:var(--navy);-webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+    /* NAV */
+    header{position:fixed;top:16px;left:0;right:0;z-index:60}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:transparent}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand .logo{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--teal),var(--navy));display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    .brand h1{font-size:18px;margin:0}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--navy);text-decoration:none;font-weight:600}
+    .cta{background:var(--teal);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+
+    /* HERO */
+    .hero{min-height:78vh;display:flex;align-items:center}
+    .hero-grid{display:grid;grid-template-columns:1fr 480px;gap:56px;align-items:center}
+    .hero .eyebrow{display:inline-block;background:var(--glass);backdrop-filter: blur(6px);padding:8px 12px;border-radius:999px;font-weight:600;color:var(--muted);}
+    .hero h2{font-size:40px;line-height:1.02;margin:18px 0 14px}
+    .hero p{color:var(--muted);font-size:18px;margin:0 0 22px}
+    .hero .buttons{display:flex;gap:12px}
+
+    /* Card grid for services */
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .card{background:white;border-radius:14px;padding:20px;box-shadow:0 8px 30px rgba(2,6,23,0.06);transition:transform .35s,box-shadow .35s}
+    .card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(2,6,23,0.09)}
+    .card h3{margin:0 0 8px}
+    .card ul{margin:0;padding-left:18px;color:var(--muted)}
+
+    /* Why choose */
+    .why{padding:36px;border-radius:14px;background:linear-gradient(180deg, rgba(14,165,164,0.06), rgba(5,32,74,0.02))}
+    .why-grid{display:flex;gap:18px;flex-wrap:wrap}
+    .why-item{flex:1 1 210px;padding:18px;background:white;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.04)}
+
+    /* Elevator banner */
+    .elevator{margin:28px 0;padding:48px;border-radius:16px;background-image:linear-gradient(120deg, rgba(5,32,74,0.92), rgba(14,165,164,0.85));color:white}
+    .elevator p{margin:0;font-size:18px}
+
+    /* Contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 360px;gap:24px}
+    form{background:white;padding:20px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.06)}
+    .field{display:flex;flex-direction:column;margin-bottom:12px}
+    input,textarea{padding:12px;border-radius:8px;border:1px solid #e6e9ee;font-size:15px}
+    button{background:var(--navy);color:white;padding:12px 16px;border-radius:10px;border:none;font-weight:700}
+
+    footer{margin-top:40px;padding:28px 0;color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero-grid{grid-template-columns:1fr;}
+      .services{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr}
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">TS</div>
+        <div>
+          <div style="font-size:12px;color:var(--muted)">Teamgrow Solutions</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px">Business Support & Growth</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="cta" href="#contact">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero" style="padding-top:84px">
+      <div class="hero-grid">
+        <div data-aos="fade-up">
+          <span class="eyebrow">Business Support & Growth</span>
+          <h2>"Driving Growth, Building Brands, Empowering People."</h2>
+          <p>Teamgrow Solutions is a dynamic business support and growth company dedicated to helping individuals and organizations scale with ease and excellence. We specialize in providing tailored solutions across Human Resource Management, Digital Marketing, Branding & Advertising, and Strategic Middleman Services.</p>
+
+          <div class="buttons">
+            <a href="#services" class="cta">Our Services</a>
+            <a href="#contact" style="text-decoration:none;padding:10px 14px;border-radius:10px;border:1px solid rgba(5,32,74,0.07);font-weight:700">Contact Us</a>
+          </div>
+        </div>
+
+        <div data-aos="zoom-in">
+          <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=0a1f3d5a2f3f6b1e9f2b8b7b8f1b2c88" alt="teamwork" style="width:100%;border-radius:14px;box-shadow:0 18px 50px rgba(2,6,23,0.08)"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" style="padding:48px 0" data-aos="fade-up">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center">
+          <div>
+            <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=6ed6f8ef8c1a4d5a1f3f8b7c2a5eed5a" alt="about" style="width:100%;border-radius:14px;object-fit:cover;max-height:380px"/>
+          </div>
+          <div>
+            <h3>About Us</h3>
+            <p style="color:var(--muted)">Teamgrow Solutions is a dynamic business support and growth company dedicated to helping individuals and organizations scale with ease and excellence. We specialize in providing tailored solutions across Human Resource Management, Digital Marketing, Branding & Advertising, and Strategic Middleman Services.</p>
+            <p style="color:var(--muted)"><strong>Our Mission:</strong> To deliver innovative solutions that drive visibility, efficiency, and sustainable success.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" style="padding:28px 0" data-aos="fade-up">
+      <h3>Our Core Services</h3>
+      <div style="margin-top:16px" class="services">
+
+        <div class="card" data-aos="fade-up" data-aos-delay="80">
+          <h3>Human Resource (HR)</h3>
+          <ul>
+            <li>Recruitment & Outsourcing</li>
+            <li>Talent Management</li>
+            <li>HR Advisory & Consulting</li>
+          </ul>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="160">
+          <h3>Digital Marketing</h3>
+          <ul>
+            <li>Social Media Management</li>
+            <li>SEO & Content Creation</li>
+            <li>Online Campaigns & Lead Generation</li>
+          </ul>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="240">
+          <h3>Branding & Advertising</h3>
+          <ul>
+            <li>Brand Identity Design</li>
+            <li>Creative Graphics & Visuals</li>
+            <li>Advertising Campaigns for Visibility</li>
+          </ul>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="320">
+          <h3>Middleman Services</h3>
+          <ul>
+            <li>Trusted Business Intermediary</li>
+            <li>Connecting Buyers & Sellers</li>
+            <li>Transparent & Reliable Deal Execution</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section id="why" style="padding:28px 0" data-aos="fade-up">
+      <h3>Why Choose Us?</h3>
+      <div style="margin-top:16px" class="why">
+        <div class="why-grid">
+          <div class="why-item">
+            <h4>Professional, result-driven approach</h4>
+            <p style="color:var(--muted)">We focus on measurable outcomes and long-term impact.</p>
+          </div>
+          <div class="why-item">
+            <h4>Customized strategies for unique business needs</h4>
+            <p style="color:var(--muted)">Every solution is tailored to fit our clients' goals and context.</p>
+          </div>
+          <div class="why-item">
+            <h4>Strong focus on growth, innovation, and client satisfaction</h4>
+            <p style="color:var(--muted)">We combine creativity and analytics to drive results.</p>
+          </div>
+          <div class="why-item">
+            <h4>A partner committed to building long-term success</h4>
+            <p style="color:var(--muted)">We work with you to scale sustainably over time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELEVATOR PITCH -->
+    <section style="padding:28px 0" data-aos="fade-up">
+      <div class="elevator">
+        <h3>Elevator Pitch</h3>
+        <p>Teamgrow Solutions is more than a service provider—we are your partner for growth. Through HR, digital marketing, branding, and middleman services, we help businesses expand, connect, and achieve lasting success.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" style="padding:28px 0" data-aos="fade-up">
+      <h3>Contact Us</h3>
+      <div style="margin-top:16px" class="contact-grid">
+        <form onsubmit="handleSubmit(event)">
+          <div class="field">
+            <label>Name</label>
+            <input required name="name" placeholder="Your full name" />
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input required type="email" name="email" placeholder="you@company.com" />
+          </div>
+          <div class="field">
+            <label>Phone / WhatsApp</label>
+            <input name="phone" placeholder="08166" />
+          </div>
+          <div class="field">
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+          </div>
+          <div style="display:flex;gap:12px;align-items:center">
+            <button type="submit">Send Message</button>
+            <div style="color:var(--muted);font-size:14px">Or call/WhatsApp: <strong>08166</strong></div>
+          </div>
+        </form>
+
+        <aside style="display:flex;flex-direction:column;gap:14px">
+          <div style="background:white;padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.06)">
+            <h4>Contact</h4>
+            <p style="margin:6px 0;color:var(--muted)"><strong>Phone/WhatsApp:</strong> 08166</p>
+            <p style="margin:6px 0;color:var(--muted)"><strong>Email:</strong> hr@teamgrosolutions.com.ng</p>
+            <p style="margin:6px 0;color:var(--muted)"><strong>Address:</strong> Akowonjo, Egbeda, Lagos</p>
+          </div>
+
+          <div style="background:linear-gradient(180deg, #fff, #f6fbfc);padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.04)">
+            <h4>Office</h4>
+            <p style="margin:6px 0;color:var(--muted)">Visit us by appointment. We act as trusted intermediaries and growth partners for businesses of all sizes.</p>
+          </div>
+
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap">
+        <div style="display:flex;gap:10px;align-items:center">
+          <div class="logo" style="width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--teal),var(--navy));display:flex;align-items:center;justify-content:center;color:white;font-weight:700">TS</div>
+          <div>
+            <div style="font-weight:700">Teamgrow Solutions</div>
+            <div style="font-size:13px;color:var(--muted)">Solutions that grow with you</div>
+          </div>
+        </div>
+
+        <div style="color:var(--muted);font-size:14px">© <span id="year"></span> Teamgrow Solutions. All rights reserved.</div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:700,easing:'ease-out-cubic',once:true});
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      alert('Thanks — message captured. Implement server-side handler to receive submissions.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

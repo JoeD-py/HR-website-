@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>README — Teamgrow Solutions Website Template</title>
   <style>
-    :root{
+    :root {
       --bg:#f6f9fb;
       --card:#ffffff;
       --accent:#0ea5a4;
@@ -13,27 +12,111 @@
       --text:#0b2436;
       --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
     }
-    html,body{height:100%;}
-    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:var(--text); line-height:1.6; -webkit-font-smoothing:antialiased}
-    header{background:linear-gradient(90deg,#e6faf8, #f1fbff); padding:28px 20px; border-bottom:1px solid #e6eef2}
-    .wrap{max-width:980px;margin:28px auto;padding:0 20px}
-    h1{font-size:28px;margin:0 0 8px}
-    p.lead{color:var(--muted);margin:0 0 18px}
-    .card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 8px 30px rgba(11,36,54,0.06);margin-bottom:18px}
-    h2{font-size:18px;margin:0 0 12px}
-    pre{background:#0b2436;color:#e6fbf8;padding:12px;border-radius:8px;overflow:auto;font-family:var(--mono);font-size:13px;margin:12px 0}
-    code{background:#f3f7f9;padding:2px 6px;border-radius:6px;font-family:var(--mono);font-size:13px}
-    ul{margin:0 0 12px 20px}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    .note{background:#fff9f2;border-left:4px solid #ffb74d;padding:12px;border-radius:8px;color:#6b4a00}
-    footer{color:var(--muted);font-size:13px;text-align:center;padding:18px 0}
-    a.anchor{color:var(--accent);text-decoration:none}
+
+    html,body {
+      height:100%;
+    }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    header {
+      background:linear-gradient(90deg,#e6faf8, #f1fbff);
+      padding:28px 20px;
+      border-bottom:1px solid #e6eef2;
+    }
+
+    .wrap {
+      max-width:980px;
+      margin:28px auto;
+      padding:0 20px;
+    }
+
+    h1 {
+      font-size:28px;
+      margin:0 0 8px;
+    }
+
+    p.lead {
+      color:var(--muted);
+      margin:0 0 18px;
+    }
+
+    .card {
+      background:var(--card);
+      border-radius:12px;
+      padding:20px;
+      box-shadow:0 8px 30px rgba(11,36,54,0.06);
+      margin-bottom:18px;
+    }
+
+    h2 {
+      font-size:18px;
+      margin:0 0 12px;
+    }
+
+    pre {
+      background:#0b2436;
+      color:#e6fbf8;
+      padding:12px;
+      border-radius:8px;
+      overflow:auto;
+      font-family:var(--mono);
+      font-size:13px;
+      margin:12px 0;
+    }
+
+    code {
+      background:#f3f7f9;
+      padding:2px 6px;
+      border-radius:6px;
+      font-family:var(--mono);
+      font-size:13px;
+    }
+
+    ul {
+      margin:0 0 12px 20px;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+    }
+
+    .note {
+      background:#fff9f2;
+      border-left:4px solid #ffb74d;
+      padding:12px;
+      border-radius:8px;
+      color:#6b4a00;
+    }
+
+    footer {
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+      padding:18px 0;
+    }
+
+    a.anchor {
+      color:var(--accent);
+      text-decoration:none;
+    }
+
     /* responsive */
     @media (max-width:820px){.grid{grid-template-columns:1fr}}
     @media (max-width:480px){h1{font-size:22px}}
   </style>
 </head>
 <body>
+
   <header>
     <div class="wrap">
       <h1>Teamgrow Solutions — Website Template (README)</h1>
